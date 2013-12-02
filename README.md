@@ -1,1 +1,1 @@
-dotinstall "responsive web design lesson"
+dotinstall lesson "responsive web design"

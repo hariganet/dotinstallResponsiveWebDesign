@@ -1,1 +1,1 @@
-dotinstall "Sass/scss lesson"
+dotinstall "responsive web design lesson"

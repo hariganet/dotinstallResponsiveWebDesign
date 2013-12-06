@@ -1,4 +1,4 @@
-//'use strict;
+'use strict';
 
 module.exports = function(grunt) {
   // Project configuration.
@@ -7,8 +7,13 @@ module.exports = function(grunt) {
   
     // grunt-contrib-connectの設定(Webサーバの設定)
     connect: {
-      site: { // オプション未設定の為、空オブジェクト
+      livereload: {
+        options: {
+          port: 8000
+        }
       }
+//      site: { // オプション未設定の為、空オブジェクト
+//      }
     },
 
     jade:{
@@ -22,7 +27,8 @@ module.exports = function(grunt) {
     // grunt-contrib-watchの設定(ウォッチ対象の設定)
     watch: {
       static_files: {
-        files: ['**/*.html', '**/*.css']  // ウォッチ対象として、ディレクトリ配下の*.htmlを指定
+        files: ['**/*.html', '**/*.css'],  // ウォッチ対象として、ディレクトリ配下の*.htmlを指定
+        tasks: []
       },
       jade_files:{
         files: '**/*.jade',

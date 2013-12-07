@@ -2,13 +2,14 @@
 html(lang="ja")
   head
     meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width,initial=1.0")
     title レスポンシブwedデザイン
     link(rel="stylesheet",type="text/css",href="http://yui.yahooapis.com/3.14.0/build/cssreset/cssreset-min.css")
     link(rel="stylesheet",href="mystyle.css")
   body
     div#header
       div#footerNavLink
-        a(href="") +
+        a(href="#footerNav") +
       h1 Header 
       div#headerNav
         ul
@@ -22,15 +23,16 @@ html(lang="ja")
 
     div#container
       div#main
-        h2 Main
+        h2 Main 
         img(src="cafe.jpg")
-        p Hello.Hello.Hello.Hello.Hello.Hello.Hello.
+        p Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. 
+        div#youtube
+          div.movie
+            iframe(src="http://www.youtube.com/embed/XvannIjPtbQ",frameborder="0")
       div#sub
         h2 Sub
-        p Hello.Hello.Hello.Hello.Hello.Hello.Hello.
-      div#sub
+        p Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. Hello. 
     div#footer
-      p Footer
       div#footerNav
         ul
           li
@@ -39,6 +41,7 @@ html(lang="ja")
             a(href="") About 
           li
             a(href="") Contact 
+      p Footer
 
 
     include _livereload 
